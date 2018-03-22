@@ -91,7 +91,7 @@ class App extends Component
             <td>:</td>
             <td>
               <a
-                href="https://utopian.io/@#{@state.data.author}/#{@state.data.permlink}"
+                href="https://utopian.io/utopian-io/@#{@state.data.author}/#{@state.data.permlink}"
                 target="_blank">
                 { @state.data.title }
               </a>
