@@ -7,10 +7,6 @@ class App extends Component
     super()
     @state =
       input: ''
-      match: {
-        author: ''
-        permlink: ''
-      }
       error: ''
       # metadata: scores
       metadata: {}
@@ -65,10 +61,6 @@ class App extends Component
           loading: true
           metadata: {}
           data: {}
-          match: {
-            author
-            permlink
-          }
         }
 
         fetch request
@@ -99,7 +91,7 @@ class App extends Component
             <td>:</td>
             <td>
               <a
-                href="https://busy.org/@#{@state.author}/#{@state.permlink}"
+                href="https://utopian.io/@#{@state.data.author}/#{@state.data.permlink}"
                 target="_blank">
                 { @state.data.title }
               </a>
@@ -142,7 +134,7 @@ class App extends Component
   render: ->
     <div className="wrapper">
       <h3 className="title">
-        Copy your link of utopian contribution here
+        See your contribution score in utopian-io
       </h3>
       <form
         className="form"
@@ -161,8 +153,9 @@ class App extends Component
           value="Submit"
         />
       </form>
+      <div className="label">Copy your utopian contribution link here</div>
 
-      <h2>{ @state.error }</h2>
+      <h4 class="loading">{ @state.error }</h4>
 
       { @state.loading and @renderLoading() }
       { @state.metadata.score and @renderScore() }
