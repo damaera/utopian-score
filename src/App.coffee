@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 
+# import scores from './scores.json'
+
 class App extends Component
   constructor: ->
     super()
     @state =
       input: ''
       error: ''
+      # metadata: scores
       metadata: {}
       loading: false
 
@@ -14,7 +17,7 @@ class App extends Component
 
   handleSubmit: (e) =>
     e.preventDefault()
-    @setState { input: '' }
+    # @setState { input: '' }
     @fetchData()
 
   fetchData: () =>
@@ -49,7 +52,10 @@ class App extends Component
           }
         }
 
-        @setState { loading: true }
+        @setState {
+          loading: true
+          metadata: {}
+        }
 
         fetch request
           .then (res) =>
@@ -68,24 +74,22 @@ class App extends Component
 
   renderScore: ->
     { score, type, moderator, questions } = @state.metadata
-    totalScore = 0
-    questions.map (q) => totalScore += q.answers[0].score
 
-    <div className="scores">
-      <div className="questions">
+    <div className="scores-wrap">
+      <div className="questions-wrap">
         { questions.map (q) => (
-          <div className="question">
+          <div className="question-wrap">
             <h4 className="question">{ q.question }</h4>
             <div className="answers-wrap">
-              { q.answers.map (a) => (
-                <div className="answer">
-                  <span className="score">{ a.score }</span>
-                  <span className="value">{ a.value }</span>
-                </div>
+              { q.answers.map (a, i) => (
+                <div className="answer#{if a.selected then " selected" else "" }">• { a.value } ({ a.score })</div>
               )}
             </div>
           </div>
         )}
+      </div>
+      <div className="summary">
+        Score: { score }
       </div>
     </div>
 
@@ -94,11 +98,17 @@ class App extends Component
 
   render: ->
     <div>
-      <form onSubmit={ @handleSubmit }>
+      <h3 className="title">
+        Copy your link of utopian contribution here
+      </h3>
+      <form
+        className="form"
+        onSubmit={ @handleSubmit }
+      >
         <input
           className="input"
           type="text"
-          placeholder="ex: https://utopian.io/"
+          placeholder="for example: https://utopian.io/@username/your-contribution"
           value={ @state.input }
           onChange={ @handleInputChange }
         />

@@ -3,22 +3,62 @@ body {
   font-size: 20px;
   font-family: monospace;
   background: #222222;
-  color: pink;
+  color:#eee;
 }
 
-input {
-  position: relative;
+.form {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+}
+
+.input {
+  flex: 1;
   font-family: monospace;
   font-size: 14px;
   padding: 10px 16px;
   margin: 10px;
-  background: pink;
+  background: #eee;
   outline: none;
   border: none;
   border-radius: 2px;
   width: 700px;
-
-  transition: all 0.2s;
   cursor: pointer;
-  top: 0px;
+}
+
+.submit {
+  font-family: monospace;
+  font-size: 14px;
+  padding: 10px 16px;
+  margin: 10px;
+  background: turquoise;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  width: 100px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.scores-wrap {
+  margin: 10px;
+  border: solid 1px rgba(255,255,255,.1);
+  padding: 20px;
+  font-size: 14px;
+}
+
+.question-wrap {
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgba(255,255,255,.1);
+}
+
+.answer {
+  margin-bottom: 5px;
+}
+
+.selected {
+  font-weight: bold;
+  color: turquoise;
 }

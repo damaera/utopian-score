@@ -1,0 +1,527 @@
+{
+  "community": "utopian",
+  "app": "utopian/1.0.0",
+  "format": "markdown",
+  "repository": {
+    "id": 125468499,
+    "name": "steemcasino",
+    "full_name": "andreistalker/steemcasino",
+    "html_url": "https://github.com/andreistalker/steemcasino",
+    "fork": false,
+    "owner": { "login": "andreistalker" }
+  },
+  "pullRequests": [
+    {
+      "url": "https://api.github.com/repos/andreistalker/steemcasino/pulls/1",
+      "id": 175863091,
+      "html_url": "https://github.com/andreistalker/steemcasino/pull/1",
+      "diff_url": "https://github.com/andreistalker/steemcasino/pull/1.diff",
+      "patch_url": "https://github.com/andreistalker/steemcasino/pull/1.patch",
+      "issue_url":
+        "https://api.github.com/repos/andreistalker/steemcasino/issues/1",
+      "number": 1,
+      "state": "closed",
+      "locked": false,
+      "title": "V0.0.2",
+      "user": {
+        "login": "andreistalker",
+        "id": 12441705,
+        "avatar_url": "https://avatars0.githubusercontent.com/u/12441705?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/andreistalker",
+        "html_url": "https://github.com/andreistalker",
+        "followers_url": "https://api.github.com/users/andreistalker/followers",
+        "following_url":
+          "https://api.github.com/users/andreistalker/following{/other_user}",
+        "gists_url":
+          "https://api.github.com/users/andreistalker/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/andreistalker/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/andreistalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/andreistalker/orgs",
+        "repos_url": "https://api.github.com/users/andreistalker/repos",
+        "events_url":
+          "https://api.github.com/users/andreistalker/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/andreistalker/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "body":
+        "## What does V0.0.2 introduce?\r\n- A withdraw function.\r\n- Coinflip games (Without an animation yet or history. They end when you enter in a game.).",
+      "created_at": "2018-03-19T10:51:30Z",
+      "updated_at": "2018-03-19T10:52:28Z",
+      "closed_at": "2018-03-19T10:52:24Z",
+      "merged_at": "2018-03-19T10:52:24Z",
+      "merge_commit_sha": "a97f8b72af2fb446e7cb00b7eea5e5f5dff1cb00",
+      "assignee": null,
+      "assignees": [],
+      "requested_reviewers": [],
+      "requested_teams": [],
+      "labels": [],
+      "milestone": null,
+      "commits_url":
+        "https://api.github.com/repos/andreistalker/steemcasino/pulls/1/commits",
+      "review_comments_url":
+        "https://api.github.com/repos/andreistalker/steemcasino/pulls/1/comments",
+      "review_comment_url":
+        "https://api.github.com/repos/andreistalker/steemcasino/pulls/comments{/number}",
+      "comments_url":
+        "https://api.github.com/repos/andreistalker/steemcasino/issues/1/comments",
+      "statuses_url":
+        "https://api.github.com/repos/andreistalker/steemcasino/statuses/eca548d6252ae6eedd6d36ce82d241b58b61abd8",
+      "head": {
+        "label": "andreistalker:V0.0.2",
+        "ref": "V0.0.2",
+        "sha": "eca548d6252ae6eedd6d36ce82d241b58b61abd8",
+        "user": {
+          "login": "andreistalker",
+          "id": 12441705,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/12441705?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/andreistalker",
+          "html_url": "https://github.com/andreistalker",
+          "followers_url":
+            "https://api.github.com/users/andreistalker/followers",
+          "following_url":
+            "https://api.github.com/users/andreistalker/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/andreistalker/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/andreistalker/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/andreistalker/subscriptions",
+          "organizations_url":
+            "https://api.github.com/users/andreistalker/orgs",
+          "repos_url": "https://api.github.com/users/andreistalker/repos",
+          "events_url":
+            "https://api.github.com/users/andreistalker/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/andreistalker/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "repo": {
+          "id": 125468499,
+          "name": "steemcasino",
+          "full_name": "andreistalker/steemcasino",
+          "owner": {
+            "login": "andreistalker",
+            "id": 12441705,
+            "avatar_url":
+              "https://avatars0.githubusercontent.com/u/12441705?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/andreistalker",
+            "html_url": "https://github.com/andreistalker",
+            "followers_url":
+              "https://api.github.com/users/andreistalker/followers",
+            "following_url":
+              "https://api.github.com/users/andreistalker/following{/other_user}",
+            "gists_url":
+              "https://api.github.com/users/andreistalker/gists{/gist_id}",
+            "starred_url":
+              "https://api.github.com/users/andreistalker/starred{/owner}{/repo}",
+            "subscriptions_url":
+              "https://api.github.com/users/andreistalker/subscriptions",
+            "organizations_url":
+              "https://api.github.com/users/andreistalker/orgs",
+            "repos_url": "https://api.github.com/users/andreistalker/repos",
+            "events_url":
+              "https://api.github.com/users/andreistalker/events{/privacy}",
+            "received_events_url":
+              "https://api.github.com/users/andreistalker/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "private": false,
+          "html_url": "https://github.com/andreistalker/steemcasino",
+          "description": "SteemCasino - Based on the steemit blockchain",
+          "fork": false,
+          "url": "https://api.github.com/repos/andreistalker/steemcasino",
+          "forks_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/forks",
+          "keys_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/keys{/key_id}",
+          "collaborators_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/collaborators{/collaborator}",
+          "teams_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/teams",
+          "hooks_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/hooks",
+          "issue_events_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues/events{/number}",
+          "events_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/events",
+          "assignees_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/assignees{/user}",
+          "branches_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/branches{/branch}",
+          "tags_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/tags",
+          "blobs_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/blobs{/sha}",
+          "git_tags_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/tags{/sha}",
+          "git_refs_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/refs{/sha}",
+          "trees_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/trees{/sha}",
+          "statuses_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/statuses/{sha}",
+          "languages_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/languages",
+          "stargazers_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/stargazers",
+          "contributors_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/contributors",
+          "subscribers_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/subscribers",
+          "subscription_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/subscription",
+          "commits_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/commits{/sha}",
+          "git_commits_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/commits{/sha}",
+          "comments_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/comments{/number}",
+          "issue_comment_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues/comments{/number}",
+          "contents_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/contents/{+path}",
+          "compare_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/compare/{base}...{head}",
+          "merges_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/merges",
+          "archive_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/{archive_format}{/ref}",
+          "downloads_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/downloads",
+          "issues_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues{/number}",
+          "pulls_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/pulls{/number}",
+          "milestones_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/milestones{/number}",
+          "notifications_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/notifications{?since,all,participating}",
+          "labels_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/labels{/name}",
+          "releases_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/releases{/id}",
+          "deployments_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/deployments",
+          "created_at": "2018-03-16T05:35:51Z",
+          "updated_at": "2018-03-19T10:52:26Z",
+          "pushed_at": "2018-03-19T10:52:28Z",
+          "git_url": "git://github.com/andreistalker/steemcasino.git",
+          "ssh_url": "git@github.com:andreistalker/steemcasino.git",
+          "clone_url": "https://github.com/andreistalker/steemcasino.git",
+          "svn_url": "https://github.com/andreistalker/steemcasino",
+          "homepage": "",
+          "size": 73,
+          "stargazers_count": 0,
+          "watchers_count": 0,
+          "language": "PHP",
+          "has_issues": true,
+          "has_projects": true,
+          "has_downloads": true,
+          "has_wiki": true,
+          "has_pages": false,
+          "forks_count": 0,
+          "mirror_url": null,
+          "archived": false,
+          "open_issues_count": 0,
+          "license": {
+            "key": "gpl-3.0",
+            "name": "GNU General Public License v3.0",
+            "spdx_id": "GPL-3.0",
+            "url": "https://api.github.com/licenses/gpl-3.0"
+          },
+          "forks": 0,
+          "open_issues": 0,
+          "watchers": 0,
+          "default_branch": "master"
+        }
+      },
+      "base": {
+        "label": "andreistalker:master",
+        "ref": "master",
+        "sha": "6682cb664c6bcde8567a53d38ca9228ced3d289d",
+        "user": {
+          "login": "andreistalker",
+          "id": 12441705,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/12441705?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/andreistalker",
+          "html_url": "https://github.com/andreistalker",
+          "followers_url":
+            "https://api.github.com/users/andreistalker/followers",
+          "following_url":
+            "https://api.github.com/users/andreistalker/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/andreistalker/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/andreistalker/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/andreistalker/subscriptions",
+          "organizations_url":
+            "https://api.github.com/users/andreistalker/orgs",
+          "repos_url": "https://api.github.com/users/andreistalker/repos",
+          "events_url":
+            "https://api.github.com/users/andreistalker/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/andreistalker/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "repo": {
+          "id": 125468499,
+          "name": "steemcasino",
+          "full_name": "andreistalker/steemcasino",
+          "owner": {
+            "login": "andreistalker",
+            "id": 12441705,
+            "avatar_url":
+              "https://avatars0.githubusercontent.com/u/12441705?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/andreistalker",
+            "html_url": "https://github.com/andreistalker",
+            "followers_url":
+              "https://api.github.com/users/andreistalker/followers",
+            "following_url":
+              "https://api.github.com/users/andreistalker/following{/other_user}",
+            "gists_url":
+              "https://api.github.com/users/andreistalker/gists{/gist_id}",
+            "starred_url":
+              "https://api.github.com/users/andreistalker/starred{/owner}{/repo}",
+            "subscriptions_url":
+              "https://api.github.com/users/andreistalker/subscriptions",
+            "organizations_url":
+              "https://api.github.com/users/andreistalker/orgs",
+            "repos_url": "https://api.github.com/users/andreistalker/repos",
+            "events_url":
+              "https://api.github.com/users/andreistalker/events{/privacy}",
+            "received_events_url":
+              "https://api.github.com/users/andreistalker/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "private": false,
+          "html_url": "https://github.com/andreistalker/steemcasino",
+          "description": "SteemCasino - Based on the steemit blockchain",
+          "fork": false,
+          "url": "https://api.github.com/repos/andreistalker/steemcasino",
+          "forks_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/forks",
+          "keys_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/keys{/key_id}",
+          "collaborators_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/collaborators{/collaborator}",
+          "teams_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/teams",
+          "hooks_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/hooks",
+          "issue_events_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues/events{/number}",
+          "events_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/events",
+          "assignees_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/assignees{/user}",
+          "branches_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/branches{/branch}",
+          "tags_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/tags",
+          "blobs_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/blobs{/sha}",
+          "git_tags_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/tags{/sha}",
+          "git_refs_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/refs{/sha}",
+          "trees_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/trees{/sha}",
+          "statuses_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/statuses/{sha}",
+          "languages_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/languages",
+          "stargazers_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/stargazers",
+          "contributors_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/contributors",
+          "subscribers_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/subscribers",
+          "subscription_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/subscription",
+          "commits_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/commits{/sha}",
+          "git_commits_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/git/commits{/sha}",
+          "comments_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/comments{/number}",
+          "issue_comment_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues/comments{/number}",
+          "contents_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/contents/{+path}",
+          "compare_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/compare/{base}...{head}",
+          "merges_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/merges",
+          "archive_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/{archive_format}{/ref}",
+          "downloads_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/downloads",
+          "issues_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues{/number}",
+          "pulls_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/pulls{/number}",
+          "milestones_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/milestones{/number}",
+          "notifications_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/notifications{?since,all,participating}",
+          "labels_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/labels{/name}",
+          "releases_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/releases{/id}",
+          "deployments_url":
+            "https://api.github.com/repos/andreistalker/steemcasino/deployments",
+          "created_at": "2018-03-16T05:35:51Z",
+          "updated_at": "2018-03-19T10:52:26Z",
+          "pushed_at": "2018-03-19T10:52:28Z",
+          "git_url": "git://github.com/andreistalker/steemcasino.git",
+          "ssh_url": "git@github.com:andreistalker/steemcasino.git",
+          "clone_url": "https://github.com/andreistalker/steemcasino.git",
+          "svn_url": "https://github.com/andreistalker/steemcasino",
+          "homepage": "",
+          "size": 73,
+          "stargazers_count": 0,
+          "watchers_count": 0,
+          "language": "PHP",
+          "has_issues": true,
+          "has_projects": true,
+          "has_downloads": true,
+          "has_wiki": true,
+          "has_pages": false,
+          "forks_count": 0,
+          "mirror_url": null,
+          "archived": false,
+          "open_issues_count": 0,
+          "license": {
+            "key": "gpl-3.0",
+            "name": "GNU General Public License v3.0",
+            "spdx_id": "GPL-3.0",
+            "url": "https://api.github.com/licenses/gpl-3.0"
+          },
+          "forks": 0,
+          "open_issues": 0,
+          "watchers": 0,
+          "default_branch": "master"
+        }
+      },
+      "_links": {
+        "self": {
+          "href":
+            "https://api.github.com/repos/andreistalker/steemcasino/pulls/1"
+        },
+        "html": {
+          "href": "https://github.com/andreistalker/steemcasino/pull/1"
+        },
+        "issue": {
+          "href":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues/1"
+        },
+        "comments": {
+          "href":
+            "https://api.github.com/repos/andreistalker/steemcasino/issues/1/comments"
+        },
+        "review_comments": {
+          "href":
+            "https://api.github.com/repos/andreistalker/steemcasino/pulls/1/comments"
+        },
+        "review_comment": {
+          "href":
+            "https://api.github.com/repos/andreistalker/steemcasino/pulls/comments{/number}"
+        },
+        "commits": {
+          "href":
+            "https://api.github.com/repos/andreistalker/steemcasino/pulls/1/commits"
+        },
+        "statuses": {
+          "href":
+            "https://api.github.com/repos/andreistalker/steemcasino/statuses/eca548d6252ae6eedd6d36ce82d241b58b61abd8"
+        }
+      },
+      "author_association": "OWNER"
+    }
+  ],
+  "platform": "github",
+  "type": "development",
+  "tags": ["utopian-io", "steemcasino"],
+  "links": [
+    "https://github.com/andreistalker/steemcasino",
+    "https://github.com/andreistalker/steemcasino/pull/1",
+    "https://utopian.io/utopian-io/@andreistalker/v0-0-2-steemcasino-coinflip-and-withdraw-added"
+  ],
+  "moderator": {
+    "account": "codingdefined",
+    "time": "2018-03-21T09:07:36.885Z",
+    "reviewed": true,
+    "pending": false,
+    "flagged": false
+  },
+  "questions": [
+    {
+      "question": "Is the project description formal?",
+      "answers": [
+        {
+          "value": "Yes it’s straight to the point",
+          "selected": false,
+          "score": 10
+        },
+        { "value": "Need more description ", "selected": true, "score": 5 },
+        { "value": "Not too descriptive", "selected": false, "score": 0 }
+      ],
+      "selected": 1
+    },
+    {
+      "question": "Is the language / grammar correct?",
+      "answers": [
+        { "value": "Yes", "selected": true, "score": 20 },
+        { "value": "A few mistakes", "selected": false, "score": 10 },
+        { "value": "It's pretty bad", "selected": false, "score": 0 }
+      ],
+      "selected": 0
+    },
+    {
+      "question": "Was the template followed?",
+      "answers": [
+        { "value": "Yes", "selected": false, "score": 10 },
+        { "value": "Partially", "selected": true, "score": 5 },
+        { "value": "No", "selected": false, "score": 0 }
+      ],
+      "selected": 1
+    },
+    {
+      "question": "How do you rate the amount of work?",
+      "answers": [
+        { "value": "Very High", "selected": false, "score": 20 },
+        { "value": "High", "selected": true, "score": 16 },
+        { "value": "Medium", "selected": false, "score": 12 },
+        { "value": "Low", "selected": false, "score": 7 },
+        { "value": "Very Low", "selected": false, "score": 3 }
+      ],
+      "selected": 1
+    },
+    {
+      "question": "How do you rate the impact on the Project?",
+      "answers": [
+        { "value": "Very High", "selected": false, "score": 20 },
+        { "value": "High", "selected": false, "score": 16 },
+        { "value": "Medium", "selected": true, "score": 12 },
+        { "value": "Low", "selected": false, "score": 7 },
+        { "value": "Very Low", "selected": false, "score": 3 }
+      ],
+      "selected": 2
+    }
+  ],
+  "score": 60
+}
