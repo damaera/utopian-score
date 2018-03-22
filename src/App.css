@@ -1,5 +1,4 @@
 body {
-  text-align: center;
   margin: 0;
   font-size: 20px;
   font-family: monospace;
@@ -7,26 +6,19 @@ body {
   color: pink;
 }
 
-button {
+input {
   position: relative;
   font-family: monospace;
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px 16px;
   margin: 10px;
   background: pink;
   outline: none;
   border: none;
   border-radius: 2px;
+  width: 700px;
 
   transition: all 0.2s;
   cursor: pointer;
   top: 0px;
-}
-
-button:hover {
-  opacity: .7;
-}
-
-button:active {
-  top: 4px;
 }
