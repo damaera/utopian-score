@@ -70,10 +70,23 @@ class App extends Component
     { score, type, moderator, questions } = @state.metadata
     totalScore = 0
     questions.map (q) => totalScore += q.answers[0].score
-    
 
-    <div>
-      <h3>{ score } / { totalScore }</h3>
+    <div className="scores">
+      <div className="questions">
+        { questions.map (q) => (
+          <div className="question">
+            <h4 className="question">{ q.question }</h4>
+            <div className="answers-wrap">
+              { q.answers.map (a) => (
+                <div className="answer">
+                  <span className="score">{ a.score }</span>
+                  <span className="value">{ a.value }</span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
 
   renderLoading: ->
@@ -83,12 +96,17 @@ class App extends Component
     <div>
       <form onSubmit={ @handleSubmit }>
         <input
+          className="input"
           type="text"
           placeholder="ex: https://utopian.io/"
           value={ @state.input }
           onChange={ @handleInputChange }
         />
-        <input type="submit" value="Submit" />
+        <input
+          className="submit"
+          type="submit"
+          value="Submit"
+        />
       </form>
 
       <h2>{ @state.error }</h2>
