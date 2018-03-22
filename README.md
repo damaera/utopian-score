@@ -1,16 +1,31 @@
-# coffee-react-boilerplate
-React + Coffeescript 2 + Webpack = :metal: :metal:
+# Utopian Score
 
-Boilerplate for starting react project with coffeescript 2
+This project can view your utopian contribution score based on questions and answers that moderator reviewed.
+
+## Requirement
+```
+node.js
+yarn
+```
 
 ## Install
 Clone this repo
 ```
-git clone https://github.com/damaera/coffee-react-boilerplate
+git clone https://github.com/damaera/utopian-score
 ```
 
-## Features
-- Of course React
-- CoffeeScript 2 with built-in JSX support
-- CSS Modules
-- Hot Module Replacement, Browser Live Reload during development
+### development
+```
+yarn start
+
+```
+or 
+
+```
+yarn dev
+```
+
+### build for production
+```
+yarn build
+```
