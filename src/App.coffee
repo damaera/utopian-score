@@ -65,9 +65,16 @@ class App extends Component
               }
           .catch (err) =>
             console.log err
+
   renderScore: ->
-    { score } = @state.metadata
-    <h3>{ score }</h3>
+    { score, type, moderator, questions } = @state.metadata
+    totalScore = 0
+    questions.map (q) => totalScore += q.answers[0].score
+    
+
+    <div>
+      <h3>{ score } / { totalScore }</h3>
+    </div>
 
   renderLoading: ->
     <h3>Loading...</h3>
