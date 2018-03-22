@@ -7,9 +7,14 @@ class App extends Component
     super()
     @state =
       input: ''
+      match: {
+        author: ''
+        permlink: ''
+      }
       error: ''
       # metadata: scores
       metadata: {}
+      data: {}
       loading: false
 
   handleInputChange: (e) =>
@@ -21,7 +26,11 @@ class App extends Component
     @fetchData()
 
   fetchData: () =>
-    @setState { error: '' }
+    @setState {
+      error: ''
+      data: {}
+      metadata: {}
+    }
     { input } = @state
     authorAndPermlink = input.split('@')[1]
     if !authorAndPermlink
@@ -55,6 +64,11 @@ class App extends Component
         @setState {
           loading: true
           metadata: {}
+          data: {}
+          match: {
+            author
+            permlink
+          }
         }
 
         fetch request
@@ -65,10 +79,12 @@ class App extends Component
             metadata = {}
             try
               metadata = JSON.parse result.json_metadata
-              @setState {
-                metadata
-                loading: false
-              }
+
+            @setState {
+              data: result
+              metadata
+              loading: false
+            }
           .catch (err) =>
             console.log err
 
@@ -76,28 +92,55 @@ class App extends Component
     { score, type, moderator, questions } = @state.metadata
 
     <div className="scores-wrap">
+      <table>
+        <tbody>
+          <tr>
+            <td>Title</td>
+            <td>:</td>
+            <td>
+              <a
+                href="https://busy.org/@#{@state.author}/#{@state.permlink}"
+                target="_blank">
+                { @state.data.title }
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Category</td>
+            <td>:</td>
+            <td>{ type }</td>
+          </tr>
+        </tbody>
+      </table>
       <div className="questions-wrap">
-        { questions.map (q) => (
-          <div className="question-wrap">
+        { questions.map (q, i) => (
+          <div
+            key={i}
+            className="question-wrap"
+          >
             <h4 className="question">{ q.question }</h4>
             <div className="answers-wrap">
-              { q.answers.map (a, i) => (
-                <div className="answer#{if a.selected then " selected" else "" }">• { a.value } ({ a.score })</div>
+              { q.answers.map (a, j) => (
+                <div
+                  key={j}
+                  className="answer#{if a.selected then " selected" else "" }">
+                  • { a.value } ({ a.score })
+                </div>
               )}
             </div>
           </div>
         )}
       </div>
       <div className="summary">
-        Score: { score }
+        <div>Score: { score }</div>
       </div>
     </div>
 
   renderLoading: ->
-    <h3>Loading...</h3>
+    <h3 className="loading">Loading...</h3>
 
   render: ->
-    <div>
+    <div className="wrapper">
       <h3 className="title">
         Copy your link of utopian contribution here
       </h3>
