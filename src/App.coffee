@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 
-# import scores from './scores.json'
-
 class App extends Component
   constructor: ->
     super()
     @state =
       input: ''
       error: ''
-      # metadata: scores
       metadata: {}
       data: {}
       loading: false
@@ -18,7 +15,6 @@ class App extends Component
 
   handleSubmit: (e) =>
     e.preventDefault()
-    # @setState { input: '' }
     @fetchData()
 
   fetchData: () =>
@@ -128,6 +124,33 @@ class App extends Component
       </div>
     </div>
 
+  renderNoScore: ->
+    <div className="scores-wrap">
+      <table>
+        <tbody>
+          <tr>
+            <td>Title</td>
+            <td>:</td>
+            <td>
+              <a
+                href="https://utopian.io/utopian-io/@#{@state.data.author}/#{@state.data.permlink}"
+                target="_blank">
+                { @state.data.title }
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Category</td>
+            <td>:</td>
+            <td>{ @state.metadata.type }</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>
+        This contribution do not have a score
+      </h4>
+    </div>
+
   renderLoading: ->
     <h3 className="loading">Loading...</h3>
 
@@ -155,10 +178,11 @@ class App extends Component
       </form>
       <div className="label">Copy your utopian contribution link here</div>
 
-      <h4 class="loading">{ @state.error }</h4>
+      <h4 className="loading">{ @state.error }</h4>
 
       { @state.loading and @renderLoading() }
       { @state.metadata.score and @renderScore() }
+      { (!@state.metadata.score and @state.metadata.community is "utopian") and @renderNoScore() }
 
     </div>
 
